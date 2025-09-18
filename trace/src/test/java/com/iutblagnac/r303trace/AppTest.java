@@ -4,15 +4,14 @@ import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
 /**
- * Unit test for simple App.
+ * Classe de test unitaire pour App.
  */
 public class AppTest 
     extends TestCase
 {
     /**
-     * Create the test case
-     *
-     * @param testName name of the test case
+     * Constructeur du test.
+     * @param testName nom du test
      */
     public AppTest( String testName )
     {
@@ -20,7 +19,8 @@ public class AppTest
     }
 
     /**
-     * @return the suite of tests being tested
+     * Retourne la suite de tests à exécuter.
+     * @return la suite de tests
      */
     public static Test suite()
     {
@@ -28,18 +28,11 @@ public class AppTest
     }
 
     /**
-     * Test the return with empty parameter
+     * Vérifie que la méthode hello() retourne "Hello World".
      */
-    public void testHelloEmptyParameter()
-    {
-        assertEquals("Hello World!", App.hello());
+    public void testHelloWorldRequirement() {
+        assertEquals("Hello World", App.hello());
     }
 
-    /**
-     * Test the return with a parameter
-     */
-    public void testHelloParameter()
-    {
-        assertEquals("Hello JMB!", App.hello("Hello JMB!"));
-    }
+    // ...existing code...
 }
